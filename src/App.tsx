@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div style={{ fontFamily: "Arial", padding: "40px", maxWidth: "900px", margin: "auto", lineHeight: "1.6" }}>
+    <div className="min-h-screen bg-slate-900 text-white p-10">
       
       <h1>Kendra Tyler</h1>
       <p>
