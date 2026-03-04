@@ -1,35 +1,82 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <div style={{ fontFamily: "Arial", padding: "40px", maxWidth: "900px", margin: "auto", lineHeight: "1.6" }}>
+      
+      <h1>Kendra Tyler</h1>
+      <p>
+        Aspiring Data journalist and data analyst with a background in computer science and investigative storytelling.
       </p>
-    </>
-  )
+
+      <h2>About Me</h2>
+      <p>
+        I hold a Bachelor's degree in Computer Science and a Master's degree in Computational and Data Journalism 
+        from Cardiff University. My work focuses on combining data analysis, programming, and storytelling to 
+        uncover meaningful insights and present them through clear, engaging narratives and visualisations.
+      </p>
+
+      <p>
+        I'm particularly interested in investigative reporting, data-driven storytelling, and building interactive 
+        tools that help audiences understand complex information.
+      </p>
+
+      <h2>Skills</h2>
+
+      <h3>Data Analysis</h3>
+      <ul>
+        <li>Python (pandas, NumPy)</li>
+        <li>Data cleaning and transformation</li>
+        <li>Exploratory data analysis</li>
+        <li>Statistical analysis</li>
+        <li>Working with large datasets</li>
+      </ul>
+
+      <h3>Programming</h3>
+      <ul>
+        <li>JavaScript / TypeScript</li>
+        <li>React</li>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>HTML / CSS</li>
+        <li>Git & GitHub</li>
+      </ul>
+
+      <h3>Data Visualisation</h3>
+      <ul>
+        <li>D3.js</li>
+        <li>Interactive visualisations</li>
+        <li>Data storytelling</li>
+        <li>Dashboard development</li>
+        <li>Excel</li>
+        <li>Google Sheets</li>
+      </ul>
+
+      <h3>Journalism</h3>
+      <ul>
+        <li>Investigative research</li>
+        <li>Data-driven reporting</li>
+        <li>Freedom of Information requests</li>
+        <li>Fact checking and verification</li>
+      </ul>
+
+      <h2>Projects</h2>
+      <ul>
+        <li>Data investigation project</li>
+        <li>Interactive data visualisation</li>
+        <li>Journalism analysis project</li>
+      </ul>
+
+      <h2>Writing</h2>
+      <ul>
+        <li>Article or investigation</li>
+        <li>Data journalism piece</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>Email: KendraAliceTyler@gmail.com</p>
+      <p>GitHub: github.com/ktyler05</p>
+
+    </div>
+  );
 }
 
-export default App
+export default App;
