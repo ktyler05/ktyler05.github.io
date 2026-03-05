@@ -6,6 +6,8 @@ html {
   scroll-behavior: smooth;
 }
 
-::selection {
-  background: rgba(148, 163, 184, 0.35);
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
