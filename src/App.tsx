@@ -1,11 +1,12 @@
 const projects = [
   {
-    title: "Investigation: [Project Title]",
-    desc: "One sentence on the story/question, what you found, and why it matters.",
-    tags: ["Python", "Pandas", "FOI", "Data cleaning"],
+    title: "KKA Pay Gap — Interactive Data Journalism Quiz",
+    desc: "An interactive site that teaches readers key pay gap facts through a quiz format, paired with an explanatory article. Built as a Master’s data journalism project with Alice Collyer and Kim Encarnacion.",
+    tags: ["Data storytelling", "Interactive quiz", "Web publishing", "Collaboration"],
+    meta: "Collaborators: Alice Collyer • Kim Encarnacion",
     links: [
-      { label: "Read", href: "#" },
-      { label: "Repo", href: "#" },
+      { label: "Live site", href: "https://paygap-kka.netlify.app" },
+      { label: "Source code", href: "https://github.com/ktyler05/KKA_PayGap/" },
     ],
   },
   {
@@ -96,7 +97,9 @@ export default function App() {
             </a>
             <a
               className="rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-slate-200 hover:bg-white/10"
-              href="#"
+              href="https://www.linkedin.com/in/kendra-tyler-515101261/"
+              target="_blank"
+              rel="noreferrer"
             >
               LinkedIn
             </a>
@@ -172,7 +175,7 @@ export default function App() {
         <section id="projects" className="mt-14">
           <div className="flex items-end justify-between gap-4">
             <SectionTitle>Projects</SectionTitle>
-            <p className="text-sm text-slate-400">3 featured pieces </p>
+            <p className="text-sm text-slate-400">3 featured pieces</p>
           </div>
 
           <div className="mt-6 grid gap-6 md:grid-cols-3">
@@ -191,6 +194,10 @@ export default function App() {
                     </span>
                   ))}
                 </div>
+
+                {("meta" in p && p.meta) ? (
+                  <p className="mt-4 text-xs text-slate-400">{p.meta}</p>
+                ) : null}
 
                 <div className="mt-5 flex gap-3 text-sm">
                   {p.links.map((l) => (
@@ -278,18 +285,34 @@ export default function App() {
               <div className="mt-4 space-y-2 text-slate-300">
                 <p>
                   Email:{" "}
-                  <a className="underline decoration-white/20 underline-offset-4 hover:decoration-white/50" href="mailto:kendraAliceTyler@gmail.com">
+                  <a
+                    className="underline decoration-white/20 underline-offset-4 hover:decoration-white/50"
+                    href="mailto:kendraAliceTyler@gmail.com"
+                  >
                     kendraAliceTyler@gmail.com
                   </a>
                 </p>
                 <p>
                   GitHub:{" "}
-                  <a className="underline decoration-white/20 underline-offset-4 hover:decoration-white/50" href="https://github.com/ktyler05" target="_blank" rel="noreferrer">
+                  <a
+                    className="underline decoration-white/20 underline-offset-4 hover:decoration-white/50"
+                    href="https://github.com/ktyler05"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     github.com/ktyler05
                   </a>
                 </p>
                 <p>
-                  LinkedIn: <span className="text-slate-400">https://www.linkedin.com/in/kendra-tyler-515101261/</span>
+                  LinkedIn:{" "}
+                  <a
+                    className="underline decoration-white/20 underline-offset-4 hover:decoration-white/50"
+                    href="https://www.linkedin.com/in/kendra-tyler-515101261/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    kendra-tyler-515101261
+                  </a>
                 </p>
               </div>
             </Card>
@@ -298,7 +321,7 @@ export default function App() {
               <p className="text-sm text-slate-400">Tip</p>
               <p className="mt-2 text-slate-300">
                 The fastest way to make this feel “real” is to replace the placeholder project titles with your
-                top 2–3 pieces, and add links (live demo / repo / article).
+                next 1–2 best pieces, and link them (live demo / repo / write-up).
               </p>
             </Card>
           </div>
