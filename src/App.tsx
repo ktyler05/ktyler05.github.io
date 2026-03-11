@@ -10,21 +10,20 @@ const projects = [
     ],
   },
   {
-    title: "Interactive Visualisation: [Project Title]",
-    desc: "A short line explaining what users can explore and what insight it reveals.",
-    tags: ["React", "TypeScript", "D3", "Storytelling"],
+    title: "Cyber Skills Gap — Master’s Dissertation Website",
+    desc: "A research-led website based on my Master’s dissertation exploring the cyber skills gap in industry. It features accessible, evidence-based articles designed to help students discover real cyber career routes, support parents, and provide insights for educators and policymakers shaping the future of digital skills.",
+    tags: ["Research", "Accessibility", "Cyber skills", "Public communication"],
     links: [
-      { label: "Live", href: "#" },
-      { label: "Repo", href: "#" },
+      { label: "Live site", href: "https://kt-dissertation.netlify.app/" },
+      { label: "Source code", href: "https://github.com/ktyler05/MasterDissKT" },
     ],
   },
   {
-    title: "Analytics Case Study: [Project Title]",
-    desc: "Clear business-style summary: dataset → method → result → impact.",
-    tags: ["SQL", "EDA", "Statistics", "Dashboards"],
+    title: "More projects coming soon",
+    desc: "I’m currently adding more work covering data analysis, visual storytelling, and investigative reporting.",
+    tags: ["In progress"],
     links: [
-      { label: "Case study", href: "#" },
-      { label: "Repo", href: "#" },
+      { label: "GitHub", href: "https://github.com/ktyler05" },
     ],
   },
 ];
